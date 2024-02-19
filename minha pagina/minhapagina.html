@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<!-- Início da estrutura HTML -->
+
+<html lang="pt-BR">
+<head>
+    <!-- Cabeçalho da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veja As Séries Com Mais Popularidade Baseada No Gênero</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 7;
+            padding: 200  
+
+    }      }
+
+        .title {
+            text-align: center;
+            background-color: #c63637;
+            color: white;
+            padding: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin-top: 80;
+        }
+
+        .styled-table {
+            text-align: center; color:black;
+
+            background-image: url('ab.jpg');
+            background-size: cover;
+            width: 100%;
+            
+            border-radius: 10px;
+        
+            /* Opacidade do fundo da tabela */
+            
+        }
+
+        .styled-table th, .styled-table td {
+            padding: 10px;
+            border: 2px solid rgb(0, 0, 0); 
+            border-radius: 5px;
+        }
+
+        .styled-table th {
+            color: white;
+            background-color: #c63637;
+            font-weight: bold;
+        }
+
+        .styled-table tbody tr:nth-child(even) {
+            background-color: #f2f2f2; 
+            border-radius: 10px;
+        }
+
+        .menu {
+            position: sticky;
+            top:0;
+            padding: 5px;
+         background-color: white;
+        
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        .menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .menu a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .content-section {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px 20px;
+            margin-top: 20px;
+            border-radius: 30px;
+            box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #cfcfc4;
+            padding: 20px 0;
+            border-radius: 0 0 10px 10px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+        .aside{
+        	 
+            text-align: center;
+            background-color: #fff;
+            padding: 30px 20px;
+            margin-top: 20px;
+            border-radius: 30px;
+            box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+           
+        }
+        .asidel{
+
+        }
+             @media screen and (max-width: 768px) {
+            .title {
+                margin-top: 40px;
+            }
+            .menu {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .menu {
+                padding: 10px;
+            }
+        }
+         img {
+            max-width: 95%;
+            height: auto;
+
+        }
+       
+    <!-- Reponsivo -->
+       * {
+        box-sizing: border-box;
+    }
+
+
+      
+
+    /* ... (seu código existente) ... */
+
+    .styled-table {
+        text-align: center;
+        color: black;
+        background-image: url('ab.jpg');
+        background-size: cover;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden; /* Impede que a imagem de fundo vaze da tabela */
+        table-layout: fixed; /* Fixa a largura da tabela */
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 10px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        word-wrap: break-word; /* Permite que o texto quebre em várias linhas */
+    }
+
+    .menu {
+        /* ... (seu código existente) ... */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .imga {
+        max-width: 100%;
+        height: auto;
+        background-color: white;
+      
+    }
+    </style>
+</head>
+<body>
+    <!-- Corpo da página -->
+    <section id= "home">
+        
+    </section>
+    <!-- As 4 Séries Com Mais Nota Baseada No Gênero -->
+    <h1 class="title"> As Séries Mais Populares Segundo o IMDB</h1>
+    
+
+    <!-- Saiba Mais Sobre Cada Gênero Citado -->
+   
+    <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#romance">Romance</a></li>
+        <li><a href="#ficcao-cientifica">Ficção Científica</a></li>
+        <li><a href="#terror">Terror</a></li>
+        <li><a href="#comedia">Comédia</a></li>
+    </ul>
+    <table class="styled-table">
+        <!-- Cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>Romance</th>
+                <th>Ficção Científica</th>
+                <th>Terror</th>
+                <th>Comédia</th>
+            </tr>
+        </thead>
+        <!-- Corpo da tabela -->
+        <tbody>
+            <tr>
+                <td>Anatomia de Grey 7,6★<br>A Casa do Dragão 8,4★<br>Big Bang: A Teoria 8,2★<br>Família Moderna 8,5★</td>
+                <td>The Boys 8,7★<br>The Walking Dead 8,1★<br>Sobrenatural 8,4★<br>Rick e Morty 9,1★</td>
+                <td>Hazbin Hotel 7,7★<br>Doctor Who 8,6★<br>For All Mankind 8,1★<br>Stranger Things 8,7★</td>
+                <td>Hazbin Hotel 7,7★<br>Sr. & Sra. Smith 6,7★<br>O Urso 8,6★<br>Loudermilk 7,9★</td>
+                
+            </tr>
+        </tbody>
+        <!-- Rodapé da tabela -->
+        <tfoot>
+            <tr>
+                <td colspan="4">Disponível em: <a href="https://www.imdb.com/search/title/?title_type=tv_series&genres=romance" target="_blank">IMDB</a>. Acesso em: 7 de fevereiro de 2024.</td>
+              
+            </tr>
+            
+        </tfoot>
+    </table>
+    <br>
+  
+    <br>
+    
+    <!-- Fim da tabela -->
+
+    <!-- Conteúdo sobre Romance -->
+    <section id="romance" class="content-section">
+        <h2>Romance</h2>
+        <p>Os filmes de romance têm a capacidade de emocionar e cativar o público com suas histórias envolventes. Eles exploram temas como amor, relacionamentos e superação de obstáculos. A experiência emocional proporcionada por filmes de romance é única e muitas vezes é marcada por momentos memoráveis.</p>
+        <img src="https://s2-techtudo.glbimg.com/RX9SQC2i1tfX5Ewmx0OPd4A8arc=/0x0:2048x1365/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/k/y/oUnF3vQluATgRxfJtvjg/imdb-repr.jpg" alt="Diários de Uma Paixão">
+    </section>
+
+    <!-- Conteúdo sobre Ficção Científica -->
+    <section id="ficcao-cientifica" class="content-section">
+        <h2>Ficção Científica</h2>
+        <p>A ficção científica é um gênero que explora conceitos imaginativos e especulativos baseados na ciência e na tecnologia. Ela transporta os espectadores para mundos distantes, futuros alternativos e realidades paralelas, oferecendo uma visão única do universo e das possibilidades da tecnologia.</p>
+        <img src="https://s2-techtudo.glbimg.com/QDIYAODrGD6Wx6lO5ALZoplvQJw=/0x0:1200x800/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/w/q/GQtAzUSC23yGNHAaG36A/8641cd99-093f-4f85-9a26-388494eb3a7f.jpg" alt="Rick And Morty">
+    </section>
+
+    <!-- Conteúdo sobre Terror -->
+    <section id="terror" class="content-section">
+        <h2>Terror</h2>
+        <p>O terror é um gênero que busca provocar medo, suspense e tensão nos espectadores. Ele explora o lado mais sombrio da condição humana, explorando temas como o desconhecido, o sobrenatural, a mortalidade e o mal.</p>
+        <img src="https://s2-techtudo.glbimg.com/Y06qKnt0SmBLmB9AJn7ZRv7tynY=/0x0:1012x509/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2023/1/A/TVBM5eTsmdfIChrGc63g/captura-de-tela-2023-01-10-093700.png" alt="Stranger Things">
+    </section>
+
+    <!-- Conteúdo sobre Comédia -->
+    <section id="comedia" class="content-section">
+        <h2>Comédia</h2>
+        <p>A comédia é um gênero que tem como objetivo divertir e entreter o público por meio do humor e da sátira. Ela aborda uma ampla variedade de temas, desde situações cotidianas até questões sociais e políticas, sempre com o objetivo de arrancar risadas do público.</p>
+        <img src="https://www.dicasdemulher.com.br/wp-content/uploads/2020/02/series-de-comedia-2.jpg" alt="Friends">
+    </section>
+
+
+    <!-- Como surgiu as séries-->
+      <section class="asidel" >
+        <p >
+
+    <aside class="aside">
+  
+    <h3 > Como surgiu as series?</h3>
+    
+        Os seriados comumente eram acompanhados, enquanto veiculavam <br>nos cinemas> pela mesma história em capítulos nos jornais. Por volta<br> dos anos 1910, tinha-se o hábito, nos cinemas populares dos Estados<br> Unidos, de passar os filmes importantes por partes de um rolo,<br> o que pode ter incentivado o aparecimento do seriado.
+
+      
+      </p> 
+       
+      </aside>
+</section>
+<br>
+<br>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Contato: <a href="0001021962@senaimgaluno.com.br">0001021962@senaimgaluno.com.br</a> | Telefone: (31) 12920-1290</p>
+    </footer>
+</body>
+</html>
+<!-- Fim da estrutura HTML -->
